@@ -1,6 +1,55 @@
-.jumbotron {
+#header-ooftypop {
+  margin-bottom: 80px;
+}
+
+#jumbotron-ooftypop {
+  background-image: url("../images/canyon-fade.png");
+  background-position: left bottom;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
   margin: 0;
 }
+
+#logo-ooftypop {
+  width: 100px;
+}
+
+.section-ooftypop {
+  margin-bottom: 40px;
+}
+
+.section-ooftypop > .container {
+  margin-bottom: 40px;
+}
+
+.hx-ooftypop-a {
+  border-bottom: 4px solid rgb(225, 150, 150);
+  display: inline-block;
+}
+
+.hx-ooftypop-b {
+  border-bottom: 4px solid rgb(150, 225, 225);
+  display: inline-block;
+}
+
+/* #nav-ooftypop > .container > #navbarNav {
+  border-bottom: 4px solid rgb(225, 150, 150);
+} */
+
+/* #nav-ooftypop > .container > #navbarNav {
+  text-align: center;
+} */
+
+/* #lets-work-together > a {
+  border-bottom: 4px solid rgb(225, 150, 150);
+  position: absolute;
+}
+
+#lets-work-together > a:hover {
+  border-bottom: 0;
+} */
 
 /******************************************************************************
 GENERAL
