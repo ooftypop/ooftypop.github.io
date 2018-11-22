@@ -15,6 +15,19 @@
 #logo-ooftypop {
   width: 100px;
 }
+/*
+#nav-social-links > ul {
+  list-style: none;
+  margin: none;
+}
+
+#nav-social-links > ul > li {
+  display: inline-block;
+} */
+
+/* #nav-ooftypop {
+  border-bottom: 4px solid rgb(150, 225, 150);
+} */
 
 .section-ooftypop {
   margin-bottom: 40px;
@@ -24,7 +37,7 @@
   margin-bottom: 40px;
 }
 
-.hx-ooftypop-a {
+/* .hx-ooftypop-a {
   border-bottom: 4px solid rgb(225, 150, 150);
   display: inline-block;
 }
@@ -32,24 +45,30 @@
 .hx-ooftypop-b {
   border-bottom: 4px solid rgb(150, 225, 225);
   display: inline-block;
+} */
+
+/* #nav-ooftypop > .container {
+  border-bottom: 4px solid rgb(150, 225, 150);
+  /* border-bottom: 4px solid rgb(225, 225, 225); */
+  /* padding-bottom: 4px; */
+/* } */
+
+/* #nav-ooftypop {
+  box-shadow: 5px 10px #888888;
+} */
+
+#nav-ooftypop > .container > #navbarNav > .navbar-text > ul > li {
+  text-decoration: none;
 }
 
-/* #nav-ooftypop > .container > #navbarNav {
-  border-bottom: 4px solid rgb(225, 150, 150);
-} */
-
-/* #nav-ooftypop > .container > #navbarNav {
-  text-align: center;
-} */
-
-/* #lets-work-together > a {
+#lets-work-together > a {
   border-bottom: 4px solid rgb(225, 150, 150);
   position: absolute;
 }
 
 #lets-work-together > a:hover {
   border-bottom: 0;
-} */
+}
 
 /******************************************************************************
 GENERAL
