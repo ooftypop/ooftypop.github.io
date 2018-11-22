@@ -1,20 +1,37 @@
-#header-ooftypop {
-  margin-bottom: 80px;
-}
-
-#jumbotron-ooftypop {
-  background-image: url("../images/canyon-fade.png");
+#jumbotron-custom {
+  background-attachment: fixed;
+  background-image: url("../images/landscape.png");
   background-position: left bottom;
   background-repeat: repeat;
-  background-attachment: fixed;
   color: white;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
-#logo-ooftypop {
+#jumbotron-custom img {
   width: 100px;
 }
+
+#navbar-custom {
+  background-color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 40px;
+}
+
+#lets-work-together > a {
+  /* color: rgb(225, 150, 150); */
+  color: rgb(150, 225, 225);
+  /* color: rgb(150, 225, 150); */
+  font-weight: bold;
+}
+
+#lets-work-together > a:hover {
+  color: rgb(130, 205, 205);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
 /*
 #nav-social-links > ul {
   list-style: none;
@@ -29,13 +46,10 @@
   border-bottom: 4px solid rgb(150, 225, 150);
 } */
 
-.section-ooftypop {
-  margin-bottom: 40px;
-}
 
-.section-ooftypop > .container {
+/* .section-ooftypop > .container {
   margin-bottom: 40px;
-}
+} */
 
 /* .hx-ooftypop-a {
   border-bottom: 4px solid rgb(225, 150, 150);
@@ -57,18 +71,9 @@
   box-shadow: 5px 10px #888888;
 } */
 
-#nav-ooftypop > .container > #navbarNav > .navbar-text > ul > li {
-  text-decoration: none;
-}
-
-#lets-work-together > a {
-  border-bottom: 4px solid rgb(225, 150, 150);
-  position: absolute;
-}
-
-#lets-work-together > a:hover {
-  border-bottom: 0;
-}
+/* #nav-ooftypop > .container > #navbarNav > .navbar-text > ul > li {
+  list-style: none;
+} */
 
 /******************************************************************************
 GENERAL
