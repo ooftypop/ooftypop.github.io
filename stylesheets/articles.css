@@ -1,0 +1,40 @@
+.article-body {
+  margin-top: 30px;
+}
+
+.article-code-block-wrapper {
+  margin-bottom: 20px;
+  margin-left: 5%;
+}
+
+.article-ul-title {
+  margin-left: 20px;
+}
+
+.article-ul-wrapper {
+  margin-left: 5%;
+}
+
+.article-wrapper {
+  margin-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.ruby-class {
+  color: #FF8000;
+  margin: 0;
+  padding: 0;
+}
+
+.ruby-key {
+  color: #D21414;
+  margin: 0;
+  padding: 0;
+}
+
+.ruby-method {
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
