@@ -97,7 +97,7 @@
       <article class="article-wrapper">
         <header>
           <h2 class="article-title">
-            How To Publish A Rails Plugin, In Four Easy Steps
+            How To Publish A Rails Plugin, In Five Easy Steps
           </h2>
           <h6 class="article-author">
             by Kevin J. Storberg
@@ -197,28 +197,71 @@
             Boom! Now SnoopDogg will automatically be included in every model in an application which uses it.
           </p>
 
-          <h4>Step 4: Publish</h4>
+          <h4>Step 4: Documentation</h4>
           <p class="article-paragraph">
-            Finally! Time to share our gem with the world.
-            In "gem_name/gem_name.gemspec", specify some of the important information about your gem.
+            Alas, we are done writing the code and ready to write the boring, yet very important documentation.
+						This is where you will list your dependencies, make acknowledgments, define your licensing, and provide directions to use and even contribute to your gem.
+          </p>
+					<p class="article-paragraph" style="margin-bottom: 0;">
+            To start, we need to define the gem.
+						In ‘gem_name/gem_name.gemspec’, you will find a short list of attributes which you can use to specify some of the most important information about your gem.
+						Do not go crazy here, we will use the README.md to go into greater detail. Just be sure to include the following:
           </p>
 
-          <div class="article-ul-wrapper">
-            <h5 class="article-ul-title">Include:</h5>
+          <div class="article-ul-wrapper" style="margin-left: 90px;">
             <ul class="article-ul">
-              <li>The author(s)</li>
-              <li>The homepage</li>
-              <li>A contact email</li>
-              <li>A brief description</li>
-              <li>Any dependencies</li>
+              <li>The author(s) - This takes an array of strings</li>
+              <li>The homepage - The repo url where the code is stored</li>
+              <li>A contact email - Only put an email you are comfortable making public</li>
+              <li>A brief description - Again do not go crazy, just something to the point</li>
+              <li>Any dependencies - This is important because bundler will need this</li>
+							<li>The licensing - SnoopDogg is using the MIT license</li>
             </ul>
           </div>
 
           <p class="article-paragraph">
-            Now in "gem_name/lib/gem_name/version.rb" update the version number to reflect your work and then push your shiny new gem to origin.
+            Now let's take advantage of the README.md file so it can be referenced as documentation.
+						Here, you will once again reference the authors, homepage, description, dependencies, and licensing.
+						But the README.md is where you can (and should) go into greater detail.
+						You can write a detailed description along with directions on how to install and use your gem.
+						You can link to the pages of your authors, or the documentation of any dependencies.
+						You can even provide information on how to contribute.
           </p>
           <p class="article-paragraph">
-            And that's it! You are done! It is as easy as 1, 2, 3, 4. (That is how that saying goes right?).
+            If you do not know how to write a README.md file, you can teach yourself <a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/" target="_blank">here</a>.
+						I would suggest taking the time to learn the syntax.
+						It is quite easy to learn, and knowing it will allow your gem’s public repositories to display your README.md in a way that is pleasing to the eyes.
+          </p>
+					<p class="article-paragraph">
+            Finally, visit ‘gem_name/lib/gem_name/version.rb’ to update the version number of your gem to reflect your work
+          </p>
+
+					<h4>Step 5: Publish</h4>
+          <p class="article-paragraph">
+            Now it is time to share our shiny new gem with the world.
+						We will want to publish the gem on rubygems.org.
+						This is where bundler commands will look when someone attempts to install your gem.
+						To do this, you will need an account with <a href="https://rubygems.org/sign_up" target="_blank">rubygems.org</a>.
+						If you do not have a rubygems.org account, make one now. I will wait here.
+          </p>
+					<p class="article-paragraph">
+						Now that you have an account, you will need to ‘build’ the latest version your gem.
+						From your gem’s directory, run ‘gem build gem_name.gemspec’.
+						In my case, I ran ‘gem build snoop_dogg.gemspec’.
+						A file will appear in your repository matching the naming convention ‘gem_name-version.gem’.
+						My file was named ‘snoop_dogg-0.1.3.gem’.
+					</p>
+					<p class="article-paragraph">
+            This file contains the information about this version of our gem. When we pass it along to rubygems.org they will pass that information along to anybody that downloads the gem.
+						As the gem is updated and new versions are released, rubygems.org will make sure that any downloads are for the latest release, OR the version requested.
+          </p>
+					<p class="article-paragraph">
+            From that same directory, run ‘gem push gem_name-version.gem’.
+						You will be prompted to enter your rubygems.org credentials so that rubygems can give you credit for your contribution.
+						Enter your username and password. Done!
+          </p>
+					<p class="article-paragraph">
+            Yes, done! That's it! You are done! It is as easy as 1, 2, 3, 4, 5. (That is how that saying goes right?).
           </p>
 
         </section>
